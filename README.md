@@ -103,6 +103,7 @@ All request/response schemas are documented interactively in Swagger.
 ```
 
 Upload this JSON via `POST /api/workflows` or run `sample_workflow.py` which does it programmatically.
+## Sample workflow files found in .workflows
 
 ---
 

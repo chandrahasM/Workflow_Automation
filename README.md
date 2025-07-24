@@ -135,5 +135,3 @@ The engine will automatically pick it up in workflow definitions.
 * `test_workflow.py` is an integration test: starts a dummy subscriber (port 8001), creates the sample workflow, triggers it, and polls until finished.
 
 ---
-
-Enjoy automating!

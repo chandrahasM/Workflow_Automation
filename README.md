@@ -103,6 +103,7 @@ All request/response schemas are documented interactively in Swagger.
 ```
 
 Upload this JSON via `POST /api/workflows` or run `sample_workflow.py` which does it programmatically.
+## Sample workflow files found in .workflows
 
 ---
 
@@ -135,5 +136,3 @@ The engine will automatically pick it up in workflow definitions.
 * `test_workflow.py` is an integration test: starts a dummy subscriber (port 8001), creates the sample workflow, triggers it, and polls until finished.
 
 ---
-
-Enjoy automating!

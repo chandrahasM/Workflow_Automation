@@ -1,0 +1,55 @@
+{
+    "run_id": "e3154fa8-205f-4287-a60f-4fa23f6906d8",
+    "workflow_id": "idDebtCollection123",
+    "status": "completed",
+    "created_at": "2025-07-24T07:21:00.568881Z",
+    "started_at": "2025-07-24T07:21:00.570143Z",
+    "completed_at": "2025-07-24T07:21:21.234770",
+    "context": {
+        "response": {
+            "status_code": 200,
+            "headers": {
+                "date": "Thu, 24 Jul 2025 07:21:21 GMT",
+                "server": "uvicorn",
+                "content-length": "21",
+                "content-type": "application/json"
+            },
+            "body": {
+                "status": "received"
+            }
+        }
+    },
+    "steps": {
+        "delay_step": {
+            "step_id": "delay_step",
+            "status": "completed",
+            "start_time": "2025-07-24T07:21:00.587579Z",
+            "end_time": "2025-07-24T07:21:20.589662Z",
+            "error": null,
+            "output": {}
+        },
+        "send_reminder": {
+            "step_id": "send_reminder",
+            "status": "completed",
+            "start_time": "2025-07-24T07:21:20.590965Z",
+            "end_time": "2025-07-24T07:21:21.233833Z",
+            "error": null,
+            "output": {
+                "response": {
+                    "status_code": 200,
+                    "headers": {
+                        "date": "Thu, 24 Jul 2025 07:21:21 GMT",
+                        "server": "uvicorn",
+                        "content-length": "21",
+                        "content-type": "application/json"
+                    },
+                    "body": {
+                        "status": "received"
+                    }
+                }
+            }
+        }
+    },
+    "current_step_id": null,
+    "error": null
+}

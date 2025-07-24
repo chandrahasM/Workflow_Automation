@@ -1,0 +1,20 @@
+# Core Dependencies
+fastapi>=0.109.0,<0.110.0
+uvicorn>=0.27.0,<0.28.0
+pydantic>=2.5.0,<3.0.0
+httpx>=0.26.0,<0.27.0
+python-dotenv>=1.0.0,<2.0.0
+python-multipart>=0.0.6,<0.0.7
+
+# Development Dependencies
+pytest==7.4.0
+pytest-asyncio==0.21.1
+black==23.7.0
+isort==5.12.0
+mypy==1.5.0
+
+# Optional Dependencies (for future use)
+# pymongo==4.5.0  # For MongoDB storage
+# python-jose[cryptography]==3.3.0  # For JWT authentication
+# passlib[bcrypt]==1.7.4  # For password hashing
+# email-validator==2.0.0  # For email validation

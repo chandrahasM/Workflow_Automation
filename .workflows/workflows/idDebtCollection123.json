@@ -1,0 +1,40 @@
+{
+    "id": "idDebtCollection123",
+    "name": "Collect debt",
+    "description": "Remind credit card payments",
+    "entry_point": "delay_step",
+    "steps": [
+        {
+            "id": "delay_step",
+            "type": "delay",
+            "config": {
+                "seconds": 20
+            },
+            "next_step_id": "send_reminder"
+        },
+        {
+            "id": "send_reminder",
+            "type": "webhook",
+            "config": {
+                "url": "http://localhost:8001/notify",
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "to": "{{customer_email}}",
+                    "subject": "Invoice Overdue Reminder",
+                    "message": "Your invoice {{invoice_id}} is overdue since {{due_date}}. Please make payment.",
+                    "invoice_id": "{{invoice_id}}",
+                    "amount": "{{amount}}",
+                    "due_date": "{{due_date}}",
+                    "customer_name": "{{customer_name}}"
+                }
+            },
+            "next_step_id": null
+        }
+    ],
+    "status": "active",
+    "created_at": "2025-07-24T06:50:17.682000Z",
+    "updated_at": "2025-07-24T06:50:17.682000Z"
+}
